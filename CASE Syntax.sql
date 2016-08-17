@@ -1,0 +1,18 @@
+DELIMITER$$
+CREATE 
+	PROCEDURE caseProc(flag INT)
+	BEGIN
+	
+	CASE flag
+	WHEN 0 THEN
+	SELECT '0';
+	WHEN 1 THEN 
+	SELECT '1';
+	WHEN 2 THEN
+	SELECT '2';
+	ELSE
+	SELECT 'nothing';	
+	END CASE;
+	
+	END$$
+DELIMITER;
